@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>About Us</title>
+</head>
+<style>
+    
+    .aboutus{
+        max-width: 720px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .aboutus h1{
+        color:brown;
+        font-weight: bolder;
+        font-size: 30px;
+        margin-top: 30px;
+        text-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    }
+    .aboutus h1:hover{
+        color: azure;
+    }
+    .aboutus p{
+        color: #000;
+        font-size: 15px;
+        margin-bottom: 20px;
+        text-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    }
+    .aboutus p:hover{
+        color: #fff;
+    }
+    .aboutus img{
+        box-shadow: 0 5px 10px rgba(0,0,0,1);
+        margin-bottom: 20px;
+    }
+    .aboutus img:hover{
+        transform: scale(1.1);
+    }
+
+    .menu{
+        max-width: 720px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .menu h1{
+        color: #fff;
+        font-weight: bolder;
+        font-size: 30px;
+        text-shadow: 0 5px 10px rgba(0,0,0,1);
+    }
+    .menu h1:hover, .menu h2:hover, .menu p:hover{
+        color: #000;
+    }
+    .menu p{
+        color: #fff;
+        font-size: 15px;
+        text-shadow: 0 5px 10px rgba(0,0,0,1);
+    }
+    .menu h2{
+        color: #fff;
+        font-weight: bolder;
+        font-size: 25px;
+        text-shadow: 0 5px 10px rgba(0,0,0,1);
+    }
+    .menu-item-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu-item{
+        width: 50%;
+        text-align: left;
+    }
+    .menu-item img{
+        box-shadow: 0 5px 10px rgba(0,0,0,1);
+    }
+    .menu-item img:hover{
+        transform: scale(1.1);
+    }
+    .menu-item-desc{
+        padding: 20px;
+    }
+    .menu-cover{
+        background: url("img/bg3.jpg");
+        background-size: cover;
+        background-repeat: no repeat;
+        padding: 40px 0px;
+    }
+</style>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><!-- <i class="fas fa-shopping-basket"></i>-->Bread Temptation</a>
+        <nav class="navbar">
+            <a href="file:///C:/Users/Lenovo/Desktop/web%20development%20course/JAVASCRIPT/Mini%20project%202/website/index.html#">Home</a>
+            <a href="file:///C:/Users/Lenovo/Desktop/web%20development%20course/JAVASCRIPT/Mini%20project%202/website/shop.html">Products</a>
+            <a class="active" href="#">About</a>
+            <a href="file:///C:/Users/Lenovo/Desktop/web%20development%20course/JAVASCRIPT/Mini%20project%202/website/review.html">Review</a>
+            <a href="file:///C:/Users/Lenovo/Desktop/web%20development%20course/JAVASCRIPT/Mini%20project%202/website/contact.html#">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user" onclick="toggleMenu()"></div>
+        </div>
+
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <a href="#" class="sub-menu-link">
+                    <img src="img/log-in.jpg" alt="">
+                    <p>log-in</p>
+                    <span>></span>
+                </a>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                    <img src="img/profile.jpg" alt="">
+                    <p>registration</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="img/noRegistration.png" alt="">
+                    <p>order without registration</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="img/setting.jpg" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="img/help.jpg" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="heading">
+        <h1>About us</h1>
+    </div>
+    <!-- <section class="about">
+        <div class="about1">
+            <div class="img">
+                <img src="img/pic1.jpg" alt="">
+            </div>
+            <div class="content">
+                <span>knows about bread temptation</span>
+                <h3>A place where you can find the super delicious bread ever.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur modi, ab quod aperiam non quae reiciendis debitis ipsa, accusamus illo</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur modi, ab quod aperiam non quae reiciendis debitis ipsa, accusamus illo</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="about2">
+            <div class="img2">
+                <img src="img/pic1.jpg" alt="">
+            </div>
+            <div class="content2">
+                <span>knows about bread temptation</span>
+                <h3>A place where you can find the super delicious bread ever.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur modi, ab quod aperiam non quae reiciendis debitis ipsa, accusamus illo</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur modi, ab quod aperiam non quae reiciendis debitis ipsa, accusamus illo</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section> -->
+    <div class="aboutus">
+        <h1>KNOWING ABOUT US</h1>
+        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laborum iure explicabo eius nam eum mollitia? Cupiditate veritatis quisquam quas quae perspiciatis ex, laboriosam facere molestiae dolor adipisci. Unde, ut!</P>
+        <img src="img/team.jpg" alt="" width="100%">
+    </div>
+    <div class="menu-cover">
+        <div class="menu">
+            <h1>our mission</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis ducimus, atque praesentium porro culpa quasi recusandae saepe odit similique ad numquam unde impedit sequi voluptatibus tenetur cupiditate maxime modi.</p>
+            <div class="menu-item-container">
+                <div class="menu-item">
+                    <img src="img/pic1.jpg" width="100%">
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-desc">
+                        <h2>Working time</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci atque distinctio nam veritatis magni cum incidunt repellat ipsam impedit culpa laudantium, hic, delectus laboriosam iure, enim modi. Illum, quos perspiciatis.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-desc">
+                        <h2>closing time</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi, tempora quisquam ullam consectetur soluta! Nulla pariatur neque perspiciatis, cum similique consectetur tempore necessitatibus nobis quas iusto ex, expedita accusantium.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/pic2.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Shop</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>About</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Review</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Contact</a>
+            </div>
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i>My order</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>My favorite</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>My wishlist</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>My account</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Terms or use</a>
+            </div>
+            <div class="box">
+                <h3>Social Media</h3>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i>Pinterest</a>
+            </div>
+            <div class="box">
+                <h3>News letter</h3>
+                <p>Subscribe for latest update</p>
+                <form action="">
+                    <input type="email" placeholder="Enter you email address">
+                    <input type="submit" value="Subscribe" class="btn">
+                </form>
+                <div class="payments">
+                    <a href="#"><img src="img/card1.png" alt=""></a>
+                    <a href="#"><img src="img/card2.png" alt=""></a>
+                    <a href="#"><img src="img/card3.png" alt=""></a>
+                    <a href="#"><img src="img/card4.png" alt=""></a>
+                    <a href="#"><img src="img/card5.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
