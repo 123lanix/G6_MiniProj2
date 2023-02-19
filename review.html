@@ -77,6 +77,73 @@
     color: #f3e8e8;
     line-height: 2;
 }
+/* -----product---- */
+.products .box-container{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.products .box-container .box{
+    position: relative;
+    background: #f3f3f3;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+.products .box-container .box:hover .icons{
+    top: 0;
+}
+.products .box-container .box .icons{
+    position: absolute;
+    top: -105%;
+    left: 0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(243, 243, 243, 0.8);
+    gap: 20px;
+}
+.products .box-container .box .icons a{
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    color: #666;
+}
+.products .box-container .box .icons a:hover{
+    background: var(--brown);
+    color: #fff;
+}
+.products .box-container .box .img{
+    height: 200px;
+    width: 380px;
+    overflow: hidden;
+}
+.products .box-container .box .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.products .box-container .box .content{
+    padding: 18px;
+}
+.products .box-container .box .content h3{
+    font-size: 20px;
+    color: #222;
+}
+.products .box-container .box .content .price{
+    font-size: 20px;
+    color: #222;
+    padding: 12px 0;
+}
+.products .box-container .box .content .stars i{
+    font-size: 15px;
+    color: var(--brown);
+}
 </style>
 <body>
     <header class="header">
@@ -170,7 +237,7 @@
                 <span>Happy client</span>
             </div>
         </div>
-        <p>I really recommend bread temptation because of fast delivery and a very delicious products.</p>
+        <p>I really recommend bread temptation because of the unique service and a very delicious products.</p>
     </div>
     <div class="box">
         <div class="user">
@@ -180,7 +247,7 @@
                 <span>Happy client</span>
             </div>
         </div>
-        <p>The best bakeshop in Philippines ever.</p>
+        <p>The best bakeshop in the Philippines ever.</p>
     </div>
     <div class="box">
         <div class="user">
@@ -190,7 +257,7 @@
                 <span>Happy client</span>
             </div>
         </div>
-        <p>ka oorder ko lang pero nandyan na ka agad ang nag dedeliver ng product.</p>
+        <p>ka tatapos ko lang tumawag pero nandyan na ka agad ang nag dedeliver ng product.</p>
     </div>
     <div class="box">
         <div class="user">
@@ -210,7 +277,7 @@
                 <span>Happy client</span>
             </div>
         </div>
-        <p>Now I know where to find a unique bread when i come back to Philippines. </p>
+        <p>Now I know where to find a unique bread when i go back to Philippines. </p>
     </div>
     <div class="box">
         <div class="user">
@@ -221,6 +288,181 @@
             </div>
         </div>
         <p>bread temptation! 100% you shot my heart!</p>
+    </div>
+</section>
+
+<!--------Product section--------->
+<section class="products">
+    <h1 class="title">most loved<span>products</span><a href="#">view all >></a></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="img/prod1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Sandwich</h3>
+                <div class="price">P250.00</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="img/prod2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Bread loaves</h3>
+                <div class="price">P250.00</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="img/prod3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Sourdough</h3>
+                <div class="price">P250.00</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="img/prod4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Bread roll</h3>
+                <div class="price">P250.00</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="img/prod5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>italian bread</h3>
+                <div class="price">P250.00</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="img/prod6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Subway bread</h3>
+                <div class="price">P250.00</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="img/prod7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>French bread</h3>
+                <div class="price">P250.00</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="img/prod8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>baguette bread</h3>
+                <div class="price">P250.00</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

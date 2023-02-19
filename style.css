@@ -205,24 +205,6 @@ section{
     color: #fff;
 }
 
-
-
-
-
-
-/*@keyframes fadeLeft{
-    0%{
-        opacity: 0;
-        transform: translateX(-5rem);
-    }
-}
-@keyframes fadeup{
-    0%{
-        opacity: 0;
-        transform: scale(0.5);
-    }
-} */
-
 /*------------------------------- carousel -------------------------------*/
 .home{
     padding-top: 100px;
@@ -295,6 +277,18 @@ section{
 }
 .home #next-slide{
     right: 30px;
+}
+@keyframes fadeLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+}
+@keyframes fadeup{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
 }
 
 
