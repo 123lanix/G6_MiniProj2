@@ -1,12 +1,12 @@
 ////////////---Carousel---//////////
-let navbar = document.querySelector('.navbar');
+let navbar = document.querySelector('#nav');
 
 document.querySelector('#menu-btn').onclick = () => {
     navbar.classList.toggle('active');
 }
-window.onscroll = () => {
-    navbar.classList.remove('active');
-}
+// window.onscroll = () => {
+//     navbar.classList.remove('active');
+// }
 
 let slides = document.querySelectorAll('.home .slides-container .slide');
 let index = 0;
