@@ -486,26 +486,18 @@ section{
     .header .navbar{
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 55vh;
         background: #2c3e50;
         top: 80px;
-        left: -100%;
         text-align: center;
-        transition: all .5s;
-
-        
-        /* position: absolute; */
-        /* top: 99%; */
+        transition: all 1.5s;
+        display: none;
         left: 0;
         right: 0;
-        background: #222;
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
-    .header .navbar .active{
+    /* .header .navbar .active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100% );
-    }
+    } */
     .header .navbar a{
         margin: 1.5rem;
         padding: 1.5rem;
@@ -514,6 +506,13 @@ section{
         display: block;
         border-radius: .5rem;
         line-height: 30px;
+    }
+    .heading h1{
+        font-size: 25px;
+    }
+    .heading{
+        padding-top: 80px;
+        padding-bottom: 60px;
     }
     .category a{
         font-size: 15px;
@@ -532,6 +531,12 @@ section{
     }
     .gallery span{
         font-size: 30px;
+    }
+    .header .navbar{
+        height: 30vh;
+    }
+    .header .navbar a{
+        margin: 10px;
     }
     
 }
@@ -563,20 +568,35 @@ section{
         flex: 10 10 350px;
     }
     .heading h1{
-        font-size: 30px;
+        font-size: 25px;
     }
-    .category a, .gallery a{
+    .heading{
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    .category a, .gallery a, .products a{
         font-size: 10px;
     }
-    .category h1, .gallery h1{
+    .category h1, .gallery h1, .products h1{
         font-size: 25px;
         
     }
-    .category span, .gallery span{
+    .category span, .gallery span, .products span{
         font-size: 20px;
         display: block;
     }
-    
+    .header .navbar{
+        height: 26.5vh;
+    }
+    .header .navbar a{
+        margin: 5px;
+    }
+    .home .slides-container .slide .content span{
+        font-size: 15px;
+    }
+    .home .slides-container .slide .content h3{
+        font-size: 25px;
+    }
 
     
 }
@@ -600,8 +620,23 @@ section{
         width: 100%;
         margin: auto;
     }
+    .heading h1{
+        font-size: 15px;
+    }
     header{
         width: 100%;
+    }
+    .header .navbar{
+        height: 26.5vh;
+    }
+    .header .navbar a{
+        margin: 5px;
+    }
+    .category h1, .gallery h1, .products h1{
+        font-size: 20px;  
+    }
+    .home .slides-container .slide .content span{
+        font-size: 10px;
     }
 }
 

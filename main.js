@@ -1,12 +1,4 @@
 ////////////---Carousel---//////////
-let navbar = document.querySelector('#nav');
-
-document.querySelector('#menu-btn').onclick = () => {
-    navbar.classList.toggle('active');
-}
-// window.onscroll = () => {
-//     navbar.classList.remove('active');
-// }
 
 let slides = document.querySelectorAll('.home .slides-container .slide');
 let index = 0;
@@ -31,3 +23,13 @@ let subMenu = document.getElementById("subMenu");
 function toggleMenu(){
     subMenu.classList.toggle("open-menu");
 }
+
+// ////////////---menu bar---//////////////////////
+function clickMenu() {
+    var x = document.getElementById("nav");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
